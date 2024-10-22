@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS public."Order"
+(
+    order_id integer NOT NULL DEFAULT nextval('"Order_order_id_seq"'::regclass),
+    weight real NOT NULL,
+    district character varying(60) COLLATE pg_catalog."default" NOT NULL,
+    "deliveryTime" timestamp with time zone NOT NULL,
+    CONSTRAINT "Order_pkey" PRIMARY KEY (order_id)
+)
+
+CREATE TABLE IF NOT EXISTS public."LogEntry"
+(
+    "logEntry_id" integer NOT NULL DEFAULT nextval('"LogEntry_logEntry_id_seq"'::regclass),
+    "ipAddress" inet NOT NULL,
+    "accessTime" timestamp with time zone NOT NULL,
+    CONSTRAINT "LogEntry_pkey" PRIMARY KEY ("logEntry_id")
+)
