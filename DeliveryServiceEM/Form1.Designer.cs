@@ -44,6 +44,7 @@
             this.dataGridViewOrders.RowTemplate.Height = 25;
             this.dataGridViewOrders.Size = new System.Drawing.Size(776, 397);
             this.dataGridViewOrders.TabIndex = 0;
+            this.dataGridViewOrders.SelectionChanged += new System.EventHandler(this.dataGridViewOrders_SelectionChanged);
             // 
             // dateTimePicker1
             // 
@@ -58,7 +59,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "Поиск";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnFilter_Click);
             // 
@@ -87,7 +88,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridViewOrders);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "DeliveryServiceEM";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

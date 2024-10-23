@@ -1,0 +1,9 @@
+DO $$
+BEGIN
+FOR i IN 1..50 LOOP
+	INSERT INTO public."Order"(
+	weight, district, "deliveryTime")
+	VALUES (round(cast(random()*(50-1+1)as numeric),2), RandomWord(), NOW()
+	);
+END LOOP;
+END; $$

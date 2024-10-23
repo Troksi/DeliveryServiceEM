@@ -1,0 +1,5 @@
+BEGIN
+  lines := string_to_array(pg_read_file('txt-cities-russia.txt', 800, 805), E'\n');
+  RETURN lines[(random() * array_length(lines, 1))::int];
+END;
+$$ LANGUAGE plpgsql VOLATILE;

@@ -20,7 +20,7 @@ namespace DeliveryServiceEM.Services
             using (var conn = new NpgsqlConnection(_connectionString))
             {
                 conn.Open();
-                var command = new NpgsqlCommand("SELECT * FROM orders", conn);
+                var command = new NpgsqlCommand("SELECT * FROM \"Order\"", conn);
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
