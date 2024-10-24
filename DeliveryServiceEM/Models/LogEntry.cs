@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeliveryServiceEM.Logs
+namespace DeliveryServiceEM.Models
 {
     public class LogEntry
     {
         public int Id { get; set; } 
-        public string IpAddress { get; set; }
+        public string LogInfo { get; set; }
         public DateTime AccessTime { get; set; }
     }
 }

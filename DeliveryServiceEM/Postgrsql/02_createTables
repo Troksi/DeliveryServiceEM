@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS public."Order"
 CREATE TABLE IF NOT EXISTS public."LogEntry"
 (
     "logEntry_id" integer NOT NULL DEFAULT nextval('"LogEntry_logEntry_id_seq"'::regclass),
-    "ipAddress" inet NOT NULL,
+    "logInfo" text NOT NULL,
     "accessTime" timestamp with time zone NOT NULL,
     CONSTRAINT "LogEntry_pkey" PRIMARY KEY ("logEntry_id")
 )
