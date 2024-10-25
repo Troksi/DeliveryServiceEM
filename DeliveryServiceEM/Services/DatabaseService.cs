@@ -2,14 +2,15 @@
 using System;
 using System.Collections.Generic;
 using DeliveryServiceEM.Models;
+using DeliveryServiceEM.Interfaces;
 
 namespace DeliveryServiceEM.Services
 {
-    public class DatabaseService
+    public class DatabaseService : IDatabaseService
     {
         private readonly string _connectionString;
 
-        public DatabaseService(string connectionString)
+        public DatabaseService(string connectionString) 
         {
             _connectionString = connectionString;
         }
@@ -81,18 +82,6 @@ namespace DeliveryServiceEM.Services
         public void ExportOrdersToFile(string filePath)
         {
             var orders = GetOrders();
-
-            using (var writer = new StreamWriter(filePath))
-            {
-                writer.WriteLine("ID;Weight;District;DeliveryTime");
-                foreach (var order in orders)
-                {
-                    writer.WriteLine($"{order.Id};{order.Weight};{order.District};{order.DeliveryTime:yyyy-MM-dd HH:mm:ss}");
-                }
-            }
-        }
-        public void SaveOrdersToFile(string filePath, List<Order> orders)
-        {
 
             using (var writer = new StreamWriter(filePath))
             {

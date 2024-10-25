@@ -1,97 +1,91 @@
 <mxfile host="65bd71144e">
     <diagram id="bBDUrUussYN1V0q8UL7m" name="Page-1">
-        <mxGraphModel dx="306" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="715" dy="331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                <mxCell id="2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
                     <mxGeometry x="80" y="170" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="130" y="130" width="800" height="250" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="5">
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" parent="1" source="4" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Фильтрует заказы" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="190" y="160" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="8">
+                <mxCell id="33" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="8">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="8">
+                <mxCell id="4" value="Фильтрует заказы" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="150" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="11">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="5" value="С По" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="140" width="70" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="С По" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="390" y="160" width="120" height="80" as="geometry"/>
+                <mxCell id="8" value="Кол. обращений по городам&lt;br&gt;_cityDistrict," style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="230" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Кол. обращений по городам&lt;br&gt;_cityDistrict," style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="540" y="270" width="120" height="80" as="geometry"/>
+                <mxCell id="11" value="Время обращения&lt;br&gt;&amp;nbsp;_firstDeliveryDateTime" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="180" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Время обращения&lt;br&gt;&amp;nbsp;_firstDeliveryDateTime" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="590" y="160" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="13" value="ID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="13" value="ID" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="440" width="50" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Вес кг" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="15" value="Вес кг" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="130" y="440" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="Район/индификатор" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="16" value="Район/индификатор" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="230" y="440" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="Время доставки&lt;br&gt;yyyy-MM-dd HH:mm:ss." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="17" value="Время доставки&lt;br&gt;yyyy-MM-dd HH:mm:ss." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="330" y="440" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP&lt;br&gt;IP" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="520" width="200" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="21" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="19" target="20">
+                <mxCell id="25" value="" style="edgeStyle=none;html=1;" parent="1" source="23" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="Журнал доступа&lt;br&gt;yyyy-MM-dd HH:mm:ss." style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="520" width="200" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="22" style="edgeStyle=none;html=1;" edge="1" parent="1" source="20" target="18">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="20" value="фильтр" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-                    <mxGeometry x="330" y="570" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="25" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="23" target="24">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="26" value="30 min" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="25">
+                <mxCell id="26" value="30 min" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="25" vertex="1" connectable="0">
                     <mxGeometry x="0.575" relative="1" as="geometry">
                         <mxPoint x="-23" y="-10" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="23" value="Добавить заказ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="200" y="270" width="120" height="80" as="geometry"/>
+                <mxCell id="23" value="Добавить заказ" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="270" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="Фильтр заказов на даставку в конкретный район" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="24" value="Фильтр заказов на даставку в конкретный район" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="270" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="+Config" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="27" value="+Config" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="720" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="or" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                <mxCell id="28" value="or" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="225" y="735" width="30" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="&lt;span style=&quot;&quot; data-src-align=&quot;11:5&quot; class=&quot;EzKURWReUAB5oZgtQNkl&quot;&gt;environment&lt;/span&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;&quot; data-src-align=&quot;0:10&quot; class=&quot;EzKURWReUAB5oZgtQNkl&quot;&gt;variables&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="29" value="&lt;span style=&quot;&quot; data-src-align=&quot;11:5&quot; class=&quot;EzKURWReUAB5oZgtQNkl&quot;&gt;environment&lt;/span&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;&quot; data-src-align=&quot;0:10&quot; class=&quot;EzKURWReUAB5oZgtQNkl&quot;&gt;variables&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="270" y="720" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="Tests" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="30" value="Tests" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="800" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="+Logs&lt;br&gt;_deliveryLog" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="31" value="+Logs&lt;br&gt;_deliveryLog" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="890" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="&lt;div&gt;Выходные файлы:&lt;/div&gt;&lt;div&gt;● логирование - в случае консольного приложения определить задание адреса&lt;/div&gt;&lt;div&gt;файла через командную строку: _deliveryLog - путь к файлу с логами, либо&lt;/div&gt;&lt;div&gt;создать в СУБД таблицу с логами;&lt;/div&gt;&lt;div&gt;● результат - записывать по адресу: _deliveryOrder - путь к файлу с результатом&lt;/div&gt;&lt;div&gt;выборки либо в СУБД таблицу.&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="32" value="&lt;div&gt;Выходные файлы:&lt;/div&gt;&lt;div&gt;● логирование - в случае консольного приложения определить задание адреса&lt;/div&gt;&lt;div&gt;файла через командную строку: _deliveryLog - путь к файлу с логами, либо&lt;/div&gt;&lt;div&gt;создать в СУБД таблицу с логами;&lt;/div&gt;&lt;div&gt;● результат - записывать по адресу: _deliveryOrder - путь к файлу с результатом&lt;/div&gt;&lt;div&gt;выборки либо в СУБД таблицу.&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="80" y="990" width="390" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="520" width="470" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Ввод данных списка" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="105" y="540" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Вывод списка всего" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="540" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Вывод по фильтрам" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="540" width="120" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

@@ -26,7 +26,7 @@ namespace DeliveryServiceEM
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
-            var orders = getFilteredOrders();
+            var orders = string.IsNullOrEmpty(txtDistrict.Text) ? _databaseService.GetOrders() : getFilteredOrders();
 
             dataGridViewOrders.DataSource = orders;
             _logger.Log($"Найдено {orders.Count} заказов");
@@ -42,21 +42,8 @@ namespace DeliveryServiceEM
             selectedTime = dateTimePicker4.Value;
             DateTime fullDateTimeTo = selectedDate.Add(selectedTime.TimeOfDay);
 
-            var orders = _databaseService.GetOrders();
-            if (string.IsNullOrWhiteSpace(district))
-            {
-                dataGridViewOrders.DataSource = orders;
-                _logger.Log($"Найдено {orders.Count} заказов");
-                return new List<Order>();
-            }
-
-            _logger.Log("Фильтрация заказов для района: " + district);
-            var filteredOrders = orders
-                .Where(order => order.District == district &&
-                                order.DeliveryTime >= fullDateTimeFrom &&
-                                order.DeliveryTime <= fullDateTimeTo)
-                .OrderBy(order => order.DeliveryTime) // Сортируем по времени доставки для дальнейшей работы
-                .ToList();
+            var filter = new OrderFilterService(_databaseService);
+            var filteredOrders = filter.FilterOrders(district,fullDateTimeFrom,fullDateTimeTo);
 
             if (!filteredOrders.Any())
             {
@@ -65,14 +52,9 @@ namespace DeliveryServiceEM
                 return new List<Order>();
             }
 
-            DateTime firstOrderTime = filteredOrders.First().DeliveryTime;
+            _logger.Log($"Найдено {filteredOrders.Count} заказов");
 
-            DateTime timeLimit = firstOrderTime.AddMinutes(30);
-            var finalOrders = filteredOrders
-                .Where(order => order.DeliveryTime <= timeLimit)
-                .ToList();
-
-            return finalOrders;
+            return filteredOrders;
         }
 
         private void btnImportOrders_Click(object sender, EventArgs e)
@@ -222,7 +204,7 @@ namespace DeliveryServiceEM
                         {
                             var orders = getFilteredOrders();
 
-                            _databaseService.SaveOrdersToFile(saveFileDialog.FileName, orders);
+                            FileSaveService.SaveToFile(saveFileDialog.FileName, orders);
                             _logger.Log($"Заказы успешно сохранены.");
                             MessageBox.Show("Заказы успешно сохранены.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }

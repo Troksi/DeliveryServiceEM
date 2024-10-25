@@ -6,11 +6,3 @@ CREATE TABLE IF NOT EXISTS public."Order"
     "deliveryTime" timestamp with time zone NOT NULL,
     CONSTRAINT "Order_pkey" PRIMARY KEY (order_id)
 )
-
-CREATE TABLE IF NOT EXISTS public."LogEntry"
-(
-    "logEntry_id" integer NOT NULL DEFAULT nextval('"LogEntry_logEntry_id_seq"'::regclass),
-    "logInfo" text NOT NULL,
-    "accessTime" timestamp with time zone NOT NULL,
-    CONSTRAINT "LogEntry_pkey" PRIMARY KEY ("logEntry_id")
-)
