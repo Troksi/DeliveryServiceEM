@@ -1,3 +1,5 @@
+>[!NOTE]
+>Это тестовый проект.
 ## DeliveryServiceEM
 
 
